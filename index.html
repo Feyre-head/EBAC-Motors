@@ -140,8 +140,53 @@
 
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form action="">
+                <div class='form-campo'>
+                    <label for=" nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class='form-campo'>
+                    <label for=" telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+                <div class='form-campo'>
+                    <label for=" email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+
+                </div>
+                <div class='form-campo'>
+                    <label for=" veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" id="veiculo-interesse">
+                </div>
+                <div class='form-campo'>
+                    <label for=" mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+                <button type=" submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <p>2025 &copy; EBAC Motors - Todos os direitos reservados</p>
+
+            <ul class="container-flex">
+                <li><a href="#" alt="Icone Facebook"> <img src="./icones/facebook.png" alt=""></a></li>
+                <li><a href="#" alt="Icone Instagram"><img src="./icones/instagram.png" alt=""></a></li>
+                <li><a href="#" alt="Icone YouTube">
+                        <img src="./icones/youtube.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
     <!-- Carregar jQuery primeiro -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type=" text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">
+        </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- Carregar Slick depois -->
@@ -152,6 +197,8 @@
         $(document).ready(function () {
             $('#carousel-images').slick({
                 autoplay: true,
+                arrows: false, // remove as setas
+                dots: false, // remove os pontos de navegação
             })
 
             // Função para fazer o menu aparecer
