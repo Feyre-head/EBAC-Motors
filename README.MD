@@ -20,3 +20,7 @@ Slick Carousel para o carrossel de imagens
 -Criação de um painel administrativo para gerenciamento de ofertas
 
 🚀 Projeto desenvolvido para fins de estudo e prática em desenvolvimento web.
+
+
+## 
+Validação formulario jqmask  05/04/2025 

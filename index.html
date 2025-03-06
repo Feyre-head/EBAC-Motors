@@ -160,7 +160,7 @@
                 </div>
                 <div class='form-campo'>
                     <label for=" veiculo-interesse">Veículo de interesse:</label>
-                    <input type="text" id="veiculo-interesse">
+                    <input type="text" id="veiculo-interesse" name="veiculo">
                 </div>
                 <div class='form-campo'>
                     <label for=" mensagem">Mensagem:</label>
@@ -191,6 +191,9 @@
 
     <!-- Carregar Slick depois -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
 
     <!-- Inicializar o Slick -->
     <script>
@@ -204,6 +207,30 @@
             // Função para fazer o menu aparecer
             $('.menu-hamburger').click(function () {
                 $('nav').slideToggle();
+            })
+
+            $('#telefone').mask('(00) 00000-0000')
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefone: {
+                        required: true, minlength: 14
+                    },
+                    veiculo: {
+                        required: true
+                    },
+                    mensagem: {
+                        required: true
+                    }
+
+                }
             })
         })
 
