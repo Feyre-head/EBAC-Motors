@@ -141,7 +141,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contato">
         <div class="container">
             <h2>Entre em contato</h2>
             <form action="">
@@ -195,46 +195,7 @@
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
 
-    <!-- Inicializar o Slick -->
-    <script>
-        $(document).ready(function () {
-            $('#carousel-images').slick({
-                autoplay: true,
-                arrows: false, // remove as setas
-                dots: false, // remove os pontos de navegação
-            })
-
-            // Função para fazer o menu aparecer
-            $('.menu-hamburger').click(function () {
-                $('nav').slideToggle();
-            })
-
-            $('#telefone').mask('(00) 00000-0000')
-
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    telefone: {
-                        required: true, minlength: 14
-                    },
-                    veiculo: {
-                        required: true
-                    },
-                    mensagem: {
-                        required: true
-                    }
-
-                }
-            })
-        })
-
-    </script>
+    <script src="./js/main.js"></script>
 
 
 </body>
